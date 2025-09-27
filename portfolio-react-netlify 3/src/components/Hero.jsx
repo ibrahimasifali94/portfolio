@@ -5,8 +5,8 @@ export default function Hero() {
       <p className="text-lg text-gray-300 mb-6">AI Product Manager | Experimentation & Analytics | Quirky AI Apps</p>
       <div className="space-x-4">
         <a href="/resume.pdf" target="_blank" className="px-4 py-2 bg-blue-600 rounded-lg shadow hover:bg-blue-700">Download Resume</a>
-        <a href="https://github.com/" target="_blank" className="px-4 py-2 bg-gray-700 rounded-lg shadow hover:bg-gray-600">GitHub</a>
-        <a href="https://linkedin.com/" target="_blank" className="px-4 py-2 bg-gray-700 rounded-lg shadow hover:bg-gray-600">LinkedIn</a>
+        <a href="https://github.com/ibrahimasifali94" target="_blank" className="px-4 py-2 bg-gray-700 rounded-lg shadow hover:bg-gray-600">GitHub</a>
+        <a href="https://www.linkedin.com/in/ibrahimaali//" target="_blank" className="px-4 py-2 bg-gray-700 rounded-lg shadow hover:bg-gray-600">LinkedIn</a>
       </div>
     </div>
   )
