@@ -21,11 +21,11 @@ export default function Projects() {
         </div>        
         <div className="rounded-2xl shadow-lg p-4 bg-gray-800">
           <h3 className="font-semibold mb-2">🎲 Experiment Roulette </h3>
-          <iframe src="https://huggingface.co/spaces/ibrahimali94/price-drop-oracle?embed=true" width="100%" height="400" style={{border:"none"}}></iframe>
+          <iframe src="https://huggingface.co/spaces/ibrahimali94/experiment-roulette?embed=true" width="100%" height="400" style={{border:"none"}}></iframe>
         </div>    
         <div className="rounded-2xl shadow-lg p-4 bg-gray-800">
           <h3 className="font-semibold mb-2">🧭 AI Travel Buddy </h3>
-          <iframe src="https://huggingface.co/spaces/ibrahimali94/price-drop-oracle?embed=true" width="100%" height="400" style={{border:"none"}}></iframe>
+          <iframe src="https://huggingface.co/spaces/ibrahimali94/ai-travel-buddy?embed=true" width="100%" height="400" style={{border:"none"}}></iframe>
         </div>           
       </div>
     </div>
