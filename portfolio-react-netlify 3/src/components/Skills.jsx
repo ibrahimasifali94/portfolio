@@ -1,4 +1,5 @@
-import { Brain, BarChart3, Users, Wrench, Rocket } from "lucide-react";
+<h3 className="text-xl font-semibold mb-3">Product Leadership</h3>
+
 
 export default function Skills() {
   return (
