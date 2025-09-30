@@ -1,4 +1,14 @@
 export default function Hero() {
+  // Google Analytics event helper
+  const trackEvent = (action, label) => {
+    if (window.gtag) {
+      window.gtag("event", action, {
+        event_category: "engagement",
+        event_label: label,
+      });
+    }
+  };
+
   return (
     <div className="relative h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 gap-12 overflow-hidden">
       {/* Animated Gradient Background */}
@@ -23,27 +33,38 @@ export default function Hero() {
             Ibrahim Ali
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8">
-            AI Product Manager | Experimentation & Analytics | Quirky AI Apps
+            Senior Product Manager | AI & Experimentation | Growth Strategist
           </p>
 
           <div className="space-x-4">
+            {/* Resume Button */}
             <a
               href="/resume.pdf"
               target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("resume_download", "Resume PDF")}
               className="px-5 py-3 bg-blue-600 rounded-xl shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform inline-block"
             >
               Download Resume
             </a>
+
+            {/* GitHub Button */}
             <a
               href="https://github.com/ibrahimasifali94"
               target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("github_click", "GitHub Profile")}
               className="px-5 py-3 bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 hover:-translate-y-1 transition transform inline-block"
             >
               GitHub
             </a>
+
+            {/* LinkedIn Button */}
             <a
               href="https://linkedin.com/in/ibrahimaali"
               target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackEvent("linkedin_click", "LinkedIn Profile")}
               className="px-5 py-3 bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 hover:-translate-y-1 transition transform inline-block"
             >
               LinkedIn
