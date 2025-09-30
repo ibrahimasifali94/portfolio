@@ -1,6 +1,3 @@
-<h3 className="text-xl font-semibold mb-3">Product Leadership</h3>
-
-
 export default function Skills() {
   return (
     <div className="max-w-6xl mx-auto py-20 px-6">
@@ -9,9 +6,7 @@ export default function Skills() {
 
         {/* Product Leadership */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold mb-3">
-            <Rocket className="w-5 h-5 mr-2 text-blue-400" /> Product Leadership
-          </h3>
+          <h3 className="text-xl font-semibold mb-3">Product Leadership</h3>
           <p className="text-gray-300">
             Product Management • Strategy • Roadmapping • Growth Strategies •
             Product-Led Growth • Leadership • Stakeholder Management • Project
@@ -21,9 +16,7 @@ export default function Skills() {
 
         {/* AI & Data */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold mb-3">
-            <Brain className="w-5 h-5 mr-2 text-purple-400" /> AI & Data
-          </h3>
+          <h3 className="text-xl font-semibold mb-3">AI & Data</h3>
           <p className="text-gray-300">
             Artificial Intelligence (AI) • Neural Networks • Machine Learning •
             Data Analytics • Data Mining • Predictive Modeling • ETL • CI/CD •
@@ -33,9 +26,7 @@ export default function Skills() {
 
         {/* Tools & Platforms */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold mb-3">
-            <Wrench className="w-5 h-5 mr-2 text-green-400" /> Tools & Platforms
-          </h3>
+          <h3 className="text-xl font-semibold mb-3">Tools & Platforms</h3>
           <p className="text-gray-300">
             SQL • PostgreSQL • Google BigQuery • Amazon Redshift • Oracle •
             Snowflake • Python • R • Java • C++ • Matlab • HTML • Tableau •
@@ -45,9 +36,7 @@ export default function Skills() {
 
         {/* Marketing & Growth */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold mb-3">
-            <BarChart3 className="w-5 h-5 mr-2 text-pink-400" /> Marketing & Growth
-          </h3>
+          <h3 className="text-xl font-semibold mb-3">Marketing & Growth</h3>
           <p className="text-gray-300">
             SEM • Google Analytics • Adwords • Content Management • Digital
             Marketing • Social Media • Social Networking • Market Research •
@@ -55,11 +44,9 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* Business & Ops */}
+        {/* Business & Operations */}
         <div>
-          <h3 className="flex items-center text-xl font-semibold mb-3">
-            <Users className="w-5 h-5 mr-2 text-yellow-400" /> Business & Operations
-          </h3>
+          <h3 className="text-xl font-semibold mb-3">Business & Operations</h3>
           <p className="text-gray-300">
             SaaS • CRM • OEM Management • Procurement • Suppliers • Purchase
             Orders • Reporting & Analysis • Customer Product Training
