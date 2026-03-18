@@ -1,58 +1,43 @@
 export default function Skills() {
+  const categories = [
+    {
+      title: "Product & Strategy",
+      items: ["Product Vision & Roadmapping", "Go-to-Market Strategy", "Concept-to-Launch Execution", "Customer Segmentation", "Competitive Analysis", "User Research", "Cross-Functional Leadership", "Stakeholder Management", "Influencing Without Authority"]
+    },
+    {
+      title: "Platform & API",
+      items: ["API Product Management", "Self-Serve Platform Design", "Data Pipeline Ownership", "Event Modeling", "Platform Migrations", "Replatforming", "GraphQL", "Webhooks", "OpenSearch"]
+    },
+    {
+      title: "AI/ML & Data",
+      items: ["GenAI Evaluation", "LLM Product Management", "Recommendation Systems", "ML Model Development", "Observability", "Correctness Monitoring", "SQL", "Python"]
+    },
+    {
+      title: "Experimentation & Analytics",
+      items: ["A/B Testing", "Experimentation Platforms", "Stat-Sig Monitoring", "Power Analysis", "MDE", "Funnel Analysis", "Cohort Analysis", "Tableau", "Looker", "Splunk"]
+    },
+    {
+      title: "Tools",
+      items: ["JIRA", "Confluence", "Figma", "New Relic", "Agile / Scrum"]
+    }
+  ];
+
   return (
     <div className="max-w-6xl mx-auto py-20 px-6">
-      <h2 className="text-3xl font-bold mb-8">Skills</h2>
-      <div className="space-y-10">
-
-        {/* Product Leadership */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Product Leadership</h3>
-          <p className="text-gray-300">
-            Product Management • Strategy • Roadmapping • Growth Strategies •
-            Product-Led Growth • Leadership • Stakeholder Management • Project
-            Management • Communication • Negotiation • Public Speaking
-          </p>
-        </div>
-
-        {/* AI & Data */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">AI & Data</h3>
-          <p className="text-gray-300">
-            Artificial Intelligence (AI) • Neural Networks • Machine Learning •
-            Data Analytics • Data Mining • Predictive Modeling • ETL • CI/CD •
-            Experimentation
-          </p>
-        </div>
-
-        {/* Tools & Platforms */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Tools & Platforms</h3>
-          <p className="text-gray-300">
-            SQL • PostgreSQL • Google BigQuery • Amazon Redshift • Oracle •
-            Snowflake • Python • R • Java • C++ • Matlab • HTML • Tableau •
-            Looker • Power BI • Excel • PowerPoint • Apache Airflow • dbt
-          </p>
-        </div>
-
-        {/* Marketing & Growth */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Marketing & Growth</h3>
-          <p className="text-gray-300">
-            SEM • Google Analytics • Adwords • Content Management • Digital
-            Marketing • Social Media • Social Networking • Market Research •
-            Product Marketing • Customer Service
-          </p>
-        </div>
-
-        {/* Business & Operations */}
-        <div>
-          <h3 className="text-xl font-semibold mb-3">Business & Operations</h3>
-          <p className="text-gray-300">
-            SaaS • CRM • OEM Management • Procurement • Suppliers • Purchase
-            Orders • Reporting & Analysis • Customer Product Training
-          </p>
-        </div>
-
+      <h2 className="text-3xl font-bold mb-10">Skills</h2>
+      <div className="grid md:grid-cols-2 gap-8">
+        {categories.map((cat, i) => (
+          <div key={i} className="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+            <h3 className="text-lg font-semibold mb-4 text-blue-400">{cat.title}</h3>
+            <div className="flex flex-wrap gap-2">
+              {cat.items.map((item, j) => (
+                <span key={j} className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
