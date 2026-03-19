@@ -34,11 +34,6 @@ export default function Hero() {
               className="px-5 py-3 bg-blue-600 rounded-xl shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform inline-block text-white font-medium">
               Download Resume
             </a>
-            <a href="https://flexairports.netlify.app" target="_blank" rel="noopener noreferrer"
-              onClick={() => trackEvent("flex_airports_click", "Flex Airports")}
-              className="px-5 py-3 bg-indigo-600 rounded-xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition transform inline-block text-white font-medium">
-              Live Prototype
-            </a>
             <a href="https://linkedin.com/in/ibrahimaali" target="_blank" rel="noopener noreferrer"
               onClick={() => trackEvent("linkedin_click", "LinkedIn")}
               className="px-5 py-3 bg-gray-700 rounded-xl shadow-lg hover:bg-gray-600 hover:-translate-y-1 transition transform inline-block text-white font-medium">
