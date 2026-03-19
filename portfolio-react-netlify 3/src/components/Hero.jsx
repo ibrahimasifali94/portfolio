@@ -1,3 +1,4 @@
+import TravelMap from "./TravelMap";
 export default function Hero() {
   const trackEvent = (action, label) => {
     if (window.gtag) {
@@ -7,8 +8,7 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 gap-12 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-blue-500 to-indigo-700 animate-gradient-x opacity-70"></div>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+     <TravelMap />
 
       <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
         <div className="relative">
